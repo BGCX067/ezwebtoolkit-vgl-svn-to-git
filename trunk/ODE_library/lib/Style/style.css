@@ -1,0 +1,183 @@
+html, body, div, span, object,
+h1, h2, h3, h4, ul, li,
+a,  font,
+fieldset, form, label, table, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    font-size: 80%;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.4em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: #000000;
+   
+}
+ul, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #1a1a1a;
+}
+a:hover {
+    color: #3069b2;
+}
+.clear {
+    clear: both;
+}
+
+
+#status_text
+{
+	position: absolute;
+	bottom: 0px;
+	height:20px;
+	width:90%;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #FFFFFF;
+}
+
+#canvas_container 
+{
+	width: 90%;
+	height: 600px;
+    border: 1px solid #AAAAAA; 
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+
+#left_menu
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	background-color: #fafafa;
+	width: 28px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #999999;
+}
+
+.btn
+{
+	width:28px;
+	height:28px;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+#select_btn
+{
+	background: url('sel_btn_n.png') center center;
+}
+
+#rect_btn
+{
+	background: url('rect_btn_n.png') center center;
+}
+
+
+#circ_btn
+{
+	background: url('circ_btn_n.png') center center;
+}
+
+
+#line_btn
+{
+	background: url('line_btn_n.png') center center;
+}
+
+
+#text_btn
+{
+	background: url('text_btn_n.png') center center;
+}
+
+
+#trig_btn
+{
+	background: url('trig_btn_n.png') center center;
+}
+
+#select_btn:hover
+{
+	background: url('sel_btn_h.png') center center;
+}
+
+#rect_btn:hover
+{
+	background: url('rect_btn_h.png') center center;
+}
+
+
+#circ_btn:hover
+{
+	background: url('circ_btn_h.png') center center;
+}
+
+
+#line_btn:hover
+{
+	background: url('line_btn_h.png') center center;
+}
+
+
+#text_btn:hover
+{
+	background: url('text_btn_h.png') center center;
+}
+
+
+#trig_btn:hover
+{
+	background: url('trig_btn_h.png') center center;
+}
+
+#select_btn_active
+{
+	background: url('sel_btn_p.png') center center;
+}
+
+#rect_btn_active
+{
+	background: url('rect_btn_p.png') center center;
+}
+
+
+#circ_btn_active
+{
+	background: url('circ_btn_p.png') center center;
+}
+
+
+#line_btn_active
+{
+	background: url('line_btn_p.png') center center;
+}
+
+
+#text_btn_active
+{
+	background: url('text_btn_p.png') center center;
+}
+
+
+#trig_btn_active
+{
+	background: url('trig_btn_p.png') center center;
+}
+

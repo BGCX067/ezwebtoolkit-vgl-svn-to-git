@@ -1,0 +1,23 @@
+#summary intrebari si raspunsuri
+
+= Intrebari =
+
+*Q (2/05/2011): Cum am trebui sa folosim librariile de test? (le utilizam in proiect sau le folosim doar ca referinta)*<br>
+Noi am folosit librariile de javascript prototype (pentru clase) si raphael (pentru desenat). Am vrea sa stim daca e ok sa continuam asa (avem sursele pe svn - implementari la rectangle, ellipse si form manager)<br>
+A:<br><br>
+
+*Q: Cand se roteste o forma, trebuie sa se roteasca si textul din aceasta?*<br>
+A: Da si textul trebuie sa se roteasca. Legat de asta, in cazul unui grup de obiecte (container) daca se roteste "grupul" atunci toate obiectele din acel grup ar trebui sa se roteasca<br><br>
+
+*Q: Cum ar trebui sa se faca redimensionarea unui element grafic relativ la coltul din stanga sus? Acesta trebuie sa ramana fix sau sa se miste in "oglinda"?*<br>
+A: Ar trebui sa avem puncte de redimensionare in toate cele patru colturi a dreptunghiului "virtual" care ar trebui sa incapsuleze orice obiect.<br><br>
+
+*Q: Cum ar trebui impartita munca pe grupe in continuare?*<br>
+A: Din punct de vedere al lucrului efectiv cred ca sunt doua mari sectiuni:
+   (A) implementarea efectiv a librariei si API-ul aferent;<br>
+   (B) modul design (adica posibilitatea de a manipula aceste obiecte nu numai prin API dar si prin GUI, pentru inceput insa lucruri simple cum ar fi: modificare locatiei pentru obiecte, dimensiuni, relatii intre obiecte, grupare, rotatii, etc.)
+ 
+Evident (B) este strict legata de (A) dar cred ca se pot  face si cateva lucruri care sunt independente la inceput. Din punctul meu de vedere (B) e inca si mai complex pentru ca desi pare simplu nu cred ca e. Gandeste-te ca totul trebuie sa lucreze si pe un touch screen (lucru independent cu de ex. doua persoane sau mai multe) nu numai in classic mode cu mouse.<br><br>
+
+*Q: Cum am putea sa testam capibilitatile multitouch?*<br>
+A:Cred ca putem folosi un iPad, din cate stiu eu Raphael are deja suport pentru multitouch, deci ne-ar trebui device-ul efectiv.

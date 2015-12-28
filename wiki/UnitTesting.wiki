@@ -1,0 +1,13 @@
+#labels unittesting
+
+
+Pentru partea de unit testing vom folosi JsTestDriver de la google. Am setat proiectul pentru testare. Pentru a vedea rezultatele testelor scrise pană acum trebuie executati pasii urmatori:
+
+1.se deschide o fereastra cmd cu directorul curent folderul *test* din proiect<br>
+2.se rulează comanda java -jar JsTestDriver.jar --port 4224
+//pentru a schimba portul trebuie schimbat și in jsTestDriver.conf<br>
+3.se deschide un browser, iar la http://localhost:4224/ selectând *Capture This Browser* ne asiguram ca browserul va fi folosit pentru test, dacă vrem sa mai adăugăm un browser repetam pasul, putem testa pe oricate browsere vrem in același timp<br>
+4.se deschide o noua fereastra cmd ca la pasul 1<br>
+5.se ruleaza comanda java -jar JsTestDriver.jar --tests all
+<br>
+Pentru mai multe detalii vizitati: http://code.google.com/p/js-test-driver/wiki/GettingStarted

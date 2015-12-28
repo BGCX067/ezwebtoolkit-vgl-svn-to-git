@@ -1,0 +1,93 @@
+<html>
+	
+<head>
+	
+	<title>D-ODE</title>
+	
+	<!-- Dependencies -->
+	<script type="text/javascript" src="dependencies/prototype.js"></script>
+    <script type="text/javascript" src="dependencies/raphael.js"></script> 
+	
+	<!-- Project Files -->
+	<script type="text/javascript" src="./lib/FormManager.js"></script>
+	
+	<script type="text/javascript" src="./lib/Objects/DObject.js"></script>
+		<script type="text/javascript" src="./lib/Objects/Line.js"></script>
+		<script type="text/javascript" src="./lib/Objects/Rectangle.js"></script>
+		<script type="text/javascript" src="./lib/Objects/Triangle.js"></script>
+		<script type="text/javascript" src="./lib/Objects/Ellipse.js"></script>
+		<script type="text/javascript" src="./lib/Objects/Container.js"></script>
+	
+	<script type="text/javascript" src="./lib/AppController.js"></script>
+	<script type="text/javascript" src="./lib/AppGUI.js"></script>
+	<script type="text/javascript" src="./lib/AppView.js"></script>
+	<script type="text/javascript" src="./lib/root.js"></script>
+	<script type="text/javascript" src="./lib/Memento.js"></script>
+	<script type="text/javascript" src="./lib/Caretaker.js"></script>
+
+	
+	
+	<script>
+		window.onload = function()
+		{
+			FormManager.canvas = new Raphael(document.getElementById("canvas_container"), 400,400);
+			/*
+			Parser.parse("var sd rectangle");
+			Parser.parse("move sd 23 23");
+			Parser.parse("setXY sd 49 23");
+			Parser.parse("var c container");
+			Parser.parse("add c sd");
+			Parser.parse("move c 50 50");*/
+			
+			/*
+			 fm = new FormManager();
+			 var id = fm.createObject("rectangle");
+			 fm.setObject(id,"move",34,34);
+			*/
+			/*
+			rect = new Triangle(1,10,0,30,30);
+			carT = new Caretaker();
+			memento = rect.createUndo();
+			carT.addMemento(memento);
+			rect.move(123,123);*/
+	
+			memento = new Memento(1,2,3,4,5,"rectangle");
+			memento.setCommand("delete");
+			alert(memento.getType());
+			alert(memento.getCommand());
+			//rect.undo(memento);
+			
+			//mem = new Memento(1,10,20,30,50);
+			//alert(mem.x);
+			 //rect.bsb();
+			/*
+			carT = new Caretaker(1);
+			carT.addMemento(1);
+			carT.addMemento(2);
+			carT.addMemento(3);
+			alert(carT.getMemento());*/
+			
+			
+			
+			
+		}
+	</script>
+	
+	
+	<style type="text/css">
+		#canvas_container {
+			width: 900px;  
+            border: 1px solid #aaa;  
+        }  
+    </style>  
+	
+		
+</head>
+
+<body>
+	
+	<div id="canvas_container"></div>  
+	
+</body>
+	
+</html>
